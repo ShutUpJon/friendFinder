@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <!--MATERALIZE CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+     <!--CUSTOM CSS-->
+     <style>
+          .results {
+               width: 100%;
+               text-align: center;
+          }
+
+          #modal-result {
+               display: inline-block;
+          }
+
+          #modal-img {
+               display: inline-block;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <h2> Friend Finder Questionnaire</h2>
+          <hr>
+          <h4><strong>First: About You</strong></h4>
+          <h5>Name: (required):</h5>
+          <input type="text" name id="name" class="form-control" required>
+          <h5>Link to Photo Image: (required):</h5>
+          <input type="text" name id="photo" class="form-control" required>
+          <br>
+          <h3>The Questions:</h3>
+          <h5>Q1: What's Your Favorite Color?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q1">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Red</option>
+                    <option value="4">Green</option>
+                    <option value="3">Blue</option>
+                    <option value="2">Yellow</option>
+                    <option value="1">Purple</option>
+               </select>
+          </div>
+          <h5>Q2: What's Your Ideal Date?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q2">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Netflix and Chill</option>
+                    <option value="4">Dinner and a Movie</option>
+                    <option value="3">A Moonlight Stroll on a Beach</option>
+                    <option value="2">Drinks and Dancing</option>
+                    <option value="1">A Fancy Black Tie Dinner</option>
+               </select>
+          </div>
+          <h5>Q3: What's Your Favorite Movie Genre?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q3">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Horror/Thriller</option>
+                    <option value="4">Comedy</option>
+                    <option value="3">Action/Adventrue</option>
+                    <option value="2">Musicals</option>
+                    <option value="1">Mystery</option>
+               </select>
+          </div>
+          <h5>Q4: What's Your Favorite Music Genre?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q4">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Rock/Metal</option>
+                    <option value="4">Classical</option>
+                    <option value="3">Country</option>
+                    <option value="2">Hip Hop/R&B</option>
+                    <option value="1">Top 40/Pop</option>
+               </select>
+          </div>
+          <h5>Q5: What's Your Favorite Hobby?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q5">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Gaming</option>
+                    <option value="4">Reading</option>
+                    <option value="3">Underwater Basket Weaving</option>
+                    <option value="2">Clipping Coupons</option>
+                    <option value="1">Playing a Musical Instrument</option>
+               </select>
+          </div>
+          <h5>Q6: What's Your Favorite Vacation Destination?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q6">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Anything with a Beach</option>
+                    <option value="4">Somewhere Warm</option>
+                    <option value="3">Somewhere Cold</option>
+                    <option value="2">A Mountain Fortress</option>
+                    <option value="1">A Lake House</option>
+               </select>
+          </div>
+          <h5>Q7: Who's Your Favorite Superhero?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q7">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Wolverine</option>
+                    <option value="4">Star Lord</option>
+                    <option value="3">Captain America</option>
+                    <option value="2">Black Widow</option>
+                    <option value="1">Iron Man</option>
+               </select>
+          </div>
+          <h5>Q8: Is a Hotdog a Sandwhich?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q8">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Yes</option>
+                    <option value="4">No</option>
+                    <option value="3">Maybe</option>
+                    <option value="2">Huh?</option>
+                    <option value="1">What Sort of Survey is This?</option>
+               </select>
+          </div>
+          <h5>Q9: What Are You Most Attracted to?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q9">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Good Looks</option>
+                    <option value="4">Sense of Humor</option>
+                    <option value="3">Bank Account</option>
+                    <option value="2">The Car They Drive</option>
+                    <option value="1">How They Treat Others</option>
+               </select>
+          </div>
+          <h5>Q10: What Word Best Describes You?</h5>
+          <div class="input-field col s12">
+               <select data-placeholder id="q10">
+                    <option value="" disabled selected>Choose Your Option</option>
+                    <option value="5">Generous</option>
+                    <option value="4">Cautious</option>
+                    <option value="3">Adventureous</option>
+                    <option value="2">Extrovert</option>
+                    <option value="1">Introvert</option>
+               </select>
+          </div>
+          <br/>
+
+          <button type="button" class="btn btn-lg btn-primary" id="submit-1">Submit!</button>
+
+          <!-- Materialize Modals -->
+          <div id="modal1" class="modal modal-fixed-footer">
+               <div class="modal-content">
+                    <h5>Your dream match is...</h5><br><br>
+                    <div class="results">
+                         <h3 id="modal-result"></h3><br>
+                         <img id="modal-img" src="" alt="" width="auto" height="auto">
+                    </div>
+               </div>
+               <div class="modal-footer">
+                    <a href="/" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+               </div>
+          </div>
+     </div>
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <!--MATERIALIZE JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+     <!--CUSTOM JS-->
+     <script type="text/javascript">
+          // Materialize Selectors
+          $(document).ready(function () {
+               $('select').material_select();
+               $('.modal').modal();
+          });
+          // Capture Answers
+          function Person(name, photo, answers) {
+               this.name = name;
+               this.photo = photo;
+               this.answers = answers;
+          }
+          // event listener
+          $("#submit-1").on("click", function (event) {
+               event.preventDefault();
+               var name = $("#name").val().trim();
+               var photo = $("#photo").val().trim();
+               var answers = [];
+               // loop through questions
+               for (var i = 0; i <= 9; i++) {
+                    var q = $("#q" + (i + 1) + " option:selected").attr("value");
+                    answers.push(q);
+               }
+               // create and send object
+               var person = new Person(name, photo, answers)
+               $.post("/api/new", person)
+                    .done(function (data) {
+                         console.log(data.photo);
+                         $("#modal-result").html(data.name);
+                         $("#modal-img").attr("src", data.photo);
+                         $("#modal-img").attr("alt", data.name);
+                         $("#modal1").modal("open");
+                    });
+          });
+     </script>
+</body>
+
+</html>
